@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+  my-perl-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my-perl-app
+    environment:
+      - PORT=3001
+    volumes:
+      - ./project/:/MyApp
+    network_mode: 'host'
