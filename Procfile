@@ -1,1 +1,0 @@
-web: perl ./script/myapp_server.pl -p $PORT
