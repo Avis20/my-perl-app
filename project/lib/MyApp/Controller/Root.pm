@@ -19,6 +19,7 @@ sub index :Path :Args(0) {
 </head>
 <body>
     <h2>Купить беляши в москве</h2>
+</h2>
 </body>
 </html>
     });
