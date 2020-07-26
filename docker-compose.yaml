@@ -11,3 +11,5 @@ services:
     volumes:
       - ./project/:/MyApp
     network_mode: 'host'
+    # command: "unbuffer perl /MyApp/script/myapp_server.pl -p $PORT -r -d"
+    command: "unbuffer perl /MyApp/script/myapp_server.pl --debug --fork --port 3001 --keepalive --restart --restart_delay 1"
